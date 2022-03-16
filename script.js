@@ -1,26 +1,27 @@
 // Selecting elements
-const header = document.querySelector('header');
-const btnConfirm = document.querySelector('.btn-confirm');
-const mainSect = document.querySelector('main');
-const countEl = document.querySelector('.count');
-const btnTimerSet = document.querySelector('.timer-submit');
-//
+const header = document.querySelector("header");
+const btnConfirm = document.querySelector(".btn-confirm");
+const mainSect = document.querySelector("main");
+const countEl = document.querySelector(".count");
+const btnTimerSet = document.querySelector(".timer-submit");
+
+// Changes
 
 // Functions
 setTimeout(function () {
-  header.classList.remove('hidden');
+  header.classList.remove("hidden");
 }, 2000);
 
-btnConfirm.addEventListener('click', function () {
+btnConfirm.addEventListener("click", function () {
   // console.log("I got clicked");
-  mainSect.scrollIntoView({ behavior: 'smooth' });
-  mainSect.classList.remove('hidden');
+  mainSect.scrollIntoView({ behavior: "smooth" });
+  mainSect.classList.remove("hidden");
 });
 
 let intervalTimer;
 
-btnTimerSet.addEventListener('click', function () {
-  const userInputSec = Number(document.querySelector('.input-number').value);
+btnTimerSet.addEventListener("click", function () {
+  const userInputSec = Number(document.querySelector(".input-number").value);
 
   // Calculating remaining seconds
   let sec = userInputSec % 60;
@@ -35,9 +36,9 @@ btnTimerSet.addEventListener('click', function () {
     // Create timer
 
     intervalTimer = setInterval(function () {
-      countEl.textContent = `${min.toString().padStart(2, '0')}:${sec
+      countEl.textContent = `${min.toString().padStart(2, "0")}:${sec
         .toString()
-        .padStart(2, '0')}`;
+        .padStart(2, "0")}`;
 
       // updating min and seconds
       if (sec === 0 && min !== 0) {
