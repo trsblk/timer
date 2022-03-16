@@ -13,7 +13,6 @@ setTimeout(function () {
 }, 2000);
 
 btnConfirm.addEventListener("click", function () {
-  // console.log("I got clicked");
   mainSect.scrollIntoView({ behavior: "smooth" });
   mainSect.classList.remove("hidden");
 });
@@ -28,6 +27,7 @@ btnTimerSet.addEventListener("click", function () {
 
   // Calculating remaining minutes
   let min = Math.trunc(userInputSec / 60);
+
   // Check if it is a running timer
   if (intervalTimer) clearInterval(intervalTimer);
 
