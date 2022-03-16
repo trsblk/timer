@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://www.flaticon.com/free-icons/timer" />
+  </head>
+  <body>
+    <header class="hidden">
+      <h1>Welcome to my timer</h1>
+      <div class="flex-container">
+        <p>
+          <img src="images/stopwatch.png" alt="timer" class="timer" /> <br />
+          You can set your time and start working. Enjoy :)
+        </p>
+        <button type="menu" class="btn btn-confirm">Got it.</button>
+      </div>
+    </header>
+
+    <!-- Implementing timer  -->
+
+    <main class="grid-container hidden">
+      <div class="grid-item grid-item--1">
+        <p>Set timer in sec:</p>
+        <input type="number" class="input-number" />
+        <input type="submit" value="Start timer" class="timer-submit" />
+      </div>
+      <div class="grid-item grid-item--2">2</div>
+      <div class="grid-item grid-item--3">
+        <span class="count"></span>
+      </div>
+      <!-- <div class="grid-item grid-item--4">4</div> -->
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
