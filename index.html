@@ -24,11 +24,16 @@
 
     <main class="grid-container hidden">
       <div class="grid-item grid-item--1">
-        <p>Set timer in sec:</p>
+        <p>Set timer in sec :</p>
         <input type="number" class="input-number" />
-        <input type="submit" value="Start timer" class="timer-submit" />
+        <input type="submit" value="Set the timer" class="timer-submit" />
       </div>
-      <div class="grid-item grid-item--2">2</div>
+      <div class="grid-item grid-item--2 timer-block--container">
+        <div class="timer-block hidden-timer-block">
+          <span class="block-number">1</span>
+          <span class="block-time-remaining">00:00</span>
+        </div>
+      </div>
       <div class="grid-item grid-item--3">
         <span class="count"></span>
       </div>
